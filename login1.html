@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Criminal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<style>
+#sticky-footer {
+flex-shrink: none;
+background: #C0C0C0;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+body {
+  background: #DFF1EC;
+  background: linear-gradient(to right, #DFF1EC, #DFF1EC);
+}
+.container {
+        height: 100;
+        width:100;
+
+    }
+    footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 50px;
+        }
+
+img {
+  opacity: 0.58;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#B0D8B6;
+justify-content:center;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+
+  font-size: 20px;
+  color: purple;
+justify-content: center;
+}
+/* unvisited link */
+a:link {
+    color:#ff9966;
+}
+
+/* visited link */
+a:visited {
+    color:purple;
+}
+
+/* mouse over link */
+a:hover {
+    color:#D52545;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.navbar-default .navbar-text {
+
+  color: #BA8658;
+
+}
+.hcontainer {
+  padding: 5px;
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar-default">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">AI Vision</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <!--<li class="active"><a href="{{ url_for('video_feed') }}">Home</a></li>
+
+    <li><a href="#">About</a></li>
+    <li><a href='#'>Information</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <!
+    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+  <!--  <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+  -->
+  </ul>
+
+</div>
+</nav>
+<p style="color:Black; font-size:50px; text-align:center;">CRIMINAL DETECTION</p>
+<marquee bgcolor="F8F8FF">  BE SAFE! BE AWARE!</marquee>
+<div class="flex-container">
+<div><a href="#c">Criminal Database</a> </div>
+<div><a href="{{ url_for('video_feed') }}">Open Camera</a> </div>
+</div>
+<!--<img src="image.jpg" class="center" alt="stop crime" width="1500" height="1000"> -->
+<div>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="hcontainer">
+    <div class="text-center"
+    <small>Copyright &copy; AI Vision</small>
+  </div>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>

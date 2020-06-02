@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Login page</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style media="screen">
+#sticky-footer {
+flex-shrink: none;
+background: #C0C0C0;
+}
+
+body {
+  background: #E9E0EE;
+  background: linear-gradient(to right, #E9E0EE, #33AEFF);
+}
+
+
+.container {
+        height: 90px;
+        width:280px;
+
+    }
+.mycontainer{
+  height:50px;
+  width:100px;
+}
+footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+    }
+    .hcontainer {
+      padding: 5px;
+    }
+    .navbar-default {
+        background-color: #B6C9E5;
+        border-color: #B6C9E5;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+
+  </style>
+  </head>
+  <body>
+    <nav class="navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AI Vision</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="container" >
+      <h1>Please login</h1>
+      <br>
+      <form action="" method="post">
+        <div class='mycontainer'>
+
+        <label for="uname"><b>Username</b></label>
+
+
+
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+
+      </div>
+
+        <div class="mycontainer" >
+
+        <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+
+      </div>
+      <br>
+      <div class='mycontainer'>
+        <label for="login"><b></b></label>
+
+        <input class="btn btn-default" type="submit" value="Login">
+      </div>
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+    <div>
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="hcontainer">
+        <div class="text-center"
+        <small>Copyright &copy; AI Vision</small>
+      </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
